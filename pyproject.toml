@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "beet-action-debug"
+version = "1.0.0"
+description = "Datapacks for https://gm4.co"
+authors = ["Gamemode 4 Contributors"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+beet = "0.104.1"
+mecha = "^0.87.0"
+bolt = "^0.45.0"
+PyYAML = "^6.0"
+pydantic = "^2.6.1"
+requests = "^2.28.1"
+pillow = "^10.0.0"
+repro-zipfile = "^0.1.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+
+[tool.poetry.plugins.beet]
+commands = "gm4.commands"
+
+[tool.beet]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

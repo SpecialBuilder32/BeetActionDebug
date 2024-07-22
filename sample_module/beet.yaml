@@ -1,0 +1,6 @@
+data_pack:
+  load: .
+
+
+pipeline:
+  - plugins.log_subproject
